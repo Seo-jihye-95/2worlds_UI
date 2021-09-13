@@ -1,0 +1,320 @@
+.cFix::after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+
+.headerWrap {
+    height: 75px;
+    background-color:  #2D2121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.headerWrap .logo{
+    position: absolute;
+    width: 200px;
+    margin: 20px;
+}
+
+
+.headerWrap .menu{
+    float: right;
+    margin: 20px;
+}
+
+
+.bodyWrap .menubarDiv{
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background-color: blueviolet;
+    z-index: 1342342423;
+    display: none;
+    
+}
+
+
+.bodyWrap .menubarDiv .menubarInner {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 85px 0 20px;
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li{
+    float: left;
+    width: calc(100%/4);
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div{
+    color: #fff;;
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div a{
+    text-decoration: none;
+    color: #fff;;
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div .mainPart{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div dl{
+    padding-top: 40px;
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div dl dt{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div dl dd{
+    padding-left:20px;
+    font-size: 15px;
+    line-height: 25px;
+    transition: ease-in-out .08s;
+}
+
+
+.bodyWrap .menubarDiv .menubarInner ul li div dl dd:hover{
+    transform: translateY( -5px );
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div dl dd .child{
+    display:inline-block;
+  width:11px;
+  height:11px;
+  
+  background:
+    linear-gradient(#fff,#fff),
+    linear-gradient(#fff,#fff),
+    rgba(0,0,0,0);
+  background-position:center;
+  background-size: 50% 1px,1px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+  transform: rotate(0);
+}
+
+.bodyWrap .menubarDiv .menubarInner ul li div dl dd:hover .child{
+   transform: rotate(180deg); /* 360도 회전 */
+}
+
+
+
+.bodyWrap{
+    padding-top: 75px;
+}
+
+
+
+.slide .sdUl .slick-arrow{
+    display: none !important;
+}
+
+.slide .sdUl .slick-dots{
+    width: 100px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+}
+
+.slide .sdUl .slick-dots li{
+    float: left;
+    width: calc(100%/3); 
+    text-indent: -9999px;
+    background-color:transparent;
+    border-radius: 90%;
+    width: 12px;
+    height: 12px;    
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 0px #777;
+    z-index: 1;
+    margin: 0 3px;
+}
+
+.slide ul li img {
+    width: 100%;
+}
+
+.content_1{ 
+    background-color: #f0eeed;
+    height: 280px;
+    /* 왜 높이가 있어야함,,,? */
+}
+
+.content_1 .outerUl{ 
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_1 .outerUl .content_slide{ 
+    float: left;
+}
+
+
+.content_1 ul li .outerDiv{
+    height: 280px;
+    background-color: #fff;
+}
+
+.content_1 ul li .imagen_outerDiv{
+    background-color: #f6f6f6;
+}
+
+.content_1 ul li .outerDiv .innerDiv{
+    width: 200px;
+    padding: 20px 0 0 20px;
+}
+
+.content_1 ul li .outerDiv .innerDiv img{
+    width: 200px;
+    height: 110px;
+}
+
+.content_1 ul li .outerDiv .innerDiv .content_txt{
+    padding-top: 30px;
+}
+
+.content_1 ul li .outerDiv .innerDiv .content_txt a{
+    text-decoration: none;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+}
+
+
+.content_1 li .common_slide .slick-list{
+    width: 250px;
+}
+
+.content_1 .common_slide .slick-arrow{
+    display: none !important; 
+}
+
+.content_1 .common_slide .slick-dots{
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+}
+
+.content_1 .common_slide .slick-dots li{
+    float: left;
+    width: calc(100%/5); 
+    text-indent: -9999px;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ddd;
+    z-index: 1;
+    margin: 0 3px;
+}
+
+.line{
+    height: 65px;
+    background-color: #272828;
+    color: #999;
+}
+
+.line .lineInner{
+    width: 1100px;
+    height: 65px;
+    margin: 0 auto;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.line .lineUl{
+    width: 1100px;
+}
+
+.line .lineUl li{
+    float: left;
+    width: calc(100%/6);
+    text-align: center;
+    line-height: 65px;
+}
+
+.footerWraper{
+    height: 186px;
+    background-color: #bbb;
+}
+
+.footerWraper .footerInner{
+    padding-top: 40px;
+    padding-left: 50px;
+    width: 800px;
+}
+
+.footerWraper .footerInner ul li{
+    float: left;
+    /* 어케 조절해야함 */
+    width: calc(100%/6);    
+    color: #fff;
+    font-size: 16px;
+}
+
+.footerWraper .footerInner ul li a{
+    text-decoration: none;
+    color: #fff;
+ }
+
+.footerWraper .footerInner ul li:nth-child(2){
+   margin-left: -50px;
+   margin-right: 10px;
+}
+
+.footerWraper .footerInner .p1{
+    font-size: 14px;
+    color: #ddd;;
+    padding-top: 20px;
+}
+
+.footerWraper .footerInner .p2{
+    font-size: 12px;
+    color: #fff;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.witch{
+    position: relative;
+    padding-left: 30px;
+    display: block;
+}
+.witch::before{
+    content: '';
+    position: absolute;
+    left:25px;
+    top:13px;
+    width:40px;
+    height:40px;
+    background: url(../images/witch_icon.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+.lineUl a{
+    display: block;
+    text-decoration: none;
+    color:#999;
+}
+.lineUl a:hover{
+    background-color: rgba(255,255,255,.4);
+}
